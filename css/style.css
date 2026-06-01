@@ -1,0 +1,122 @@
+/* ==========================================================================
+   Estilos base de la página (Tomados de la Tarea 1 para mantener el fondo)
+   ========================================================================== */
+body {
+    background-color: #FFFDF3;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #D3D3D3;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Estilos para el enlace de salto (Accesibilidad) */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #0000FF;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* ==========================================================================
+   Pasos obligatorios de la Tarea 2
+   ========================================================================== */
+
+/* Paso 2: Comentar el estilo existente para el elemento li */
+/* li {
+    display: inline;
+} 
+*/
+
+/* Paso 3: Cambiar el elemento nav a inline-block y ancho aproximado del 80% */
+nav {
+    display: inline-block;
+    width: 80%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Paso 4: Selector descendente para la imagen dentro del nav (Ancho 10%) */
+nav + img,
+header > img {
+    display: inline-block;
+    width: 10%;
+    position: relative;
+    top: 20px;
+}
+
+/* Ajuste del título */
+h1 {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    color: #00008B;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+/* Paso 5 & 7: Ajustar la clase GRID (2 columnas al 40% cada una) */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;   /* Centra las columnas horizontalmente */
+    align-items: center;       /* Alinea los elementos verticalmente */
+    row-gap: 20px;             /* Añade espacio entre las filas */
+    column-gap: 5%;            /* Espacio entre columnas */
+    background-color: #FFFF00; /* Fondo amarillo de la captura */
+    padding: 20px;
+}
+
+/* Paso 6: Selector descendente para afectar SOLO imágenes dentro de .grid al 100% */
+.grid img {
+    width: 100%;
+    height: auto;
+}
+
+/* Paso 8: Estilizar la clase FLEX y jugar con los valores */
+.flex {
+    display: flex;
+    flex-wrap: wrap;           /* Permite que las imágenes bajen de fila */
+    justify-content: center;   /* Centra las imágenes */
+    background-color: #FFFF00; /* Fondo amarillo de la captura */
+    padding: 20px;
+    gap: 10px;                 /* Espacio entre las imágenes flex */
+}
+
+/* Controlar tamaño de imágenes flex de forma dinámica */
+.flex img {
+    width: 18%;                /* Cerca de 5 imágenes por fila en pantallas grandes */
+    min-width: 150px;          /* Evita que se encojan demasiado */
+    height: auto;
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: #D3D3D3;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
